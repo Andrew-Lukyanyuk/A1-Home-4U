@@ -147,6 +147,11 @@ border: 1px solid black;
     padding-bottom: 30px;
         background: #fff;
 }
+#clientsSay {
+ border: 1px solid black;
+    float: right;
+ 
+}
 
 #lowmenu1 {
     float: left;
