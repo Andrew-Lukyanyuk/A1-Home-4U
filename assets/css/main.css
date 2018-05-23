@@ -30,7 +30,7 @@ p {
 }
 
 a {
-    color: #f85c37;
+    color: #f74444;
     word-wrap: break-word;
 
     -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
@@ -42,7 +42,7 @@ a {
 
 a:hover,
 a:focus {
-    color: #7b7b7b;
+    color: red;
     text-decoration: none;
     outline: 0;
 }
@@ -81,7 +81,9 @@ a:after {
 }
 
 .navbar-inverse .navbar-nav > .active > a {
-	background: #ff7878
+	background-color: transparent;
+  color: #e34229;
+  font-size: 18px;
 }
 
 .navbar-inverse .navbar-brand {
@@ -108,7 +110,7 @@ a:after {
 
 #imgmain{width:100%;height:auto;}
 
-#telmenu{width: 1170px;text-align: right;padding:0 28px 0 0;color: #000;}
+#telmenu{width: 1170px;text-align: right;padding:0 28px 0 0;color: #e34229;;}
 
 #rightfixed {
     position:fixed;
@@ -151,6 +153,9 @@ border: 1px solid black;
  border: 1px solid black;
     float: right;
  
+}
+#line {
+  cursor: pointer;
 }
 
 #lowmenu1 {
