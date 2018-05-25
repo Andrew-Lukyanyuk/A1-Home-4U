@@ -9,14 +9,9 @@
     <link rel="shortcut icon" href="icons/a1home.png">
 
     <title>A1 Home 4U</title>
-
-    <!-- Bootstrap core CSS -->
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="assets/css/font-awesome.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
     <link href="assets/css/main.css" rel="stylesheet">
-
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -28,7 +23,7 @@
   <body>
 
     <!-- Fixed navbar -->
-    <div id=rightfixed>CONTACTS</div>
+    <a data-toggle="modal" data-target="#myModalContact" href="#myModal"><div id=rightfixed>CONTACTS</div></a>
     <div class="navbar navbar-inverse navbar-fixed-top">
     	<center>
     	<div id=telmenu><a href=mailto:a1home4u_ltd@yahoo.com?Subject=Tema id=telmenu>a1home4u_ltd@yahoo.com</a>TEL: 0791 787 4570</div>
@@ -40,7 +35,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand"><img id="logo" src="img/brand.png"></a>
+          <a class="navbar-brand"><img id="logo" src="img/brand_260.png"></a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
@@ -57,78 +52,48 @@
 
 
 	<div class="container">
-		<div class="col-lg-7" id="aboutUs">
+		<div class="col-lg-6" id="aboutUs">
 			
 			<h2>About us</h2>	
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 		</div>
+		<div class="col-lg-1"></div>
 		<div class="col-lg-5" id=gallery>
-			<h4>Galery</h4>
+			<h4>Gallery</h4>
 			<p>	
-			<!--	<img id=imggal src="img/galery.jpg">	
-				<img id=imggal2 src="img/galery2.jpg">-->
-				<img src="img/slide1.jpg" width="215" height="215" name="foto"/>
-				<img src="img/slide2.jpg" width="215" height="215" name="slide"/>
-				<script type="text/javascript">
-
+				<img src="img/slide1.jpg" width="215"  name="foto" class=gallery_lt />
+				<img src="img/slide2.jpg" width="215"  name="slide" class=gallery_rt />
+<script type="text/javascript">
     var x = 0;
-
     function changeImg()
     {
-        
-        if(x < 6)
+         if(x < 6)
         {
-                  
         document.foto.src="img/slide"+(x+1)+'.jpg';
         document.slide.src="img/slide"+(x+2)+'.jpg';
         x++;  
         }
-
         else 
         {   
         document.foto.src="img/slide7.jpg";
         document.slide.src="img/slide8.jpg";
         x = 1; 
         }
-        
     }
-
     setInterval("changeImg()", 2000);
-    
 </script>
 			</p>
 		</div>
-			
+<div class="col-lg-1"></div>			
 		<div class="col-lg-5" id=clientsSay>
 			<h4>What our clients say</h4>
 			<p id="short1" onclick="long1()"></p>
 			<p id="short2" onclick="long2()"></p>
 			<p id="short3" onclick="long3()"></p>
 			
-<script>
-/*function long1(){
-	 var str = "<p> <b>William: </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ";
-	  document.getElementById("short1").innerHTML = str ;
-}
-
-function long2(){
-	 var str = "<p> <b>William: </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ";
-	  document.getElementById("short2").innerHTML = str ;
-}
-
-
-function long3(){
-	 var str = "<p> <b>William: </b> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. ";
-	  document.getElementById("short3").innerHTML = str ;
-}
-
-
-*/
-
-</script>
-
-
 
 <script>
 
@@ -171,7 +136,7 @@ Short3();
 	</div>
 
 
-<div id="galery">
+<div id="gallery-large">
 		<div class="container">
 			<div class="row centered">
 			<!-- Container for the image gallery -->
@@ -180,32 +145,32 @@ Short3();
 				  <!-- Full-width images with number text -->
 				  <div class="mySlides">
 				    <div class="numbertext">1 / 6</div>
-				      <img src="img/slide1.jpg" style="width:50%">
+				      <img src="img/slide1.jpg">
 				  </div>
 
 				  <div class="mySlides">
 				    <div class="numbertext">2 / 6</div>
-				      <img src="img/slide2.jpg" style="width:50%">
+				      <img src="img/slide2.jpg">
 				  </div>
 
 				  <div class="mySlides">
 				    <div class="numbertext">3 / 6</div>
-				      <img src="img/slide3.jpg" style="width:50%">
+				      <img src="img/slide3.jpg">
 				  </div>
 
 				  <div class="mySlides">
 				    <div class="numbertext">4 / 6</div>
-				      <img src="img/slide4.jpg" style="width:50%">
+				      <img src="img/slide4.jpg">
 				  </div>
 
 				  <div class="mySlides">
 				    <div class="numbertext">5 / 6</div>
-				      <img src="img/slide5.jpg" style="width:50%">
+				      <img src="img/slide5.jpg">
 				  </div>
 
 				  <div class="mySlides">
 				    <div class="numbertext">6 / 6</div>
-				      <img src="img/slide6.jpg" style="width:50%">
+				      <img src="img/slide6.jpg">
 				  </div>
 
 				  <!-- Next and previous buttons -->
@@ -313,6 +278,56 @@ Short3();
 	    </div><!-- /.modal-content -->
 	  </div><!-- /.modal-dialog -->
 	</div><!-- /.modal -->
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- MODAL FOR SIDE CONTACT -->
+	<div class="modal fade" id="myModalContact" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	        <h4 class="modal-title" id="myModalLabel">contact us</h4>
+	      </div>
+	      <div class="modal-body">
+		        <div class="row centered">
+		        	<p>sender form</p>
+<form>
+	<center><div id=mesaageform style="float:left;width:90%;text-align:left;margin:5%">
+		<div style="width:20%;float:left;clear:left;margin:0 0 20px 0">Name</div><div style="width:80%;float:left"><input type="text" name="Name" value="" style="width:100%"></div>
+		<div style="width:20%;float:left;clear:left;margin:0 0 20px 0">E-mail</div><div style="width:80%;float:left"><input type="text" name="Email" value="" style="width:100%"></div>
+		<div style="width:20%;float:left;clear:left;margin:0 0 20px 0">Message</div><div style="width:80%;float:left"><textarea class="textarea" wrap="virtual" name="Message" rows="9" value="" style="width:100%"></textarea></div>
+	</div></center>
+</form>
+
+
+		        	<div id="mapwrap">
+					</div>	
+		        </div>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-danger" data-dismiss="modal">Send</button>
+	      </div>
+	    </div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+
+
+
+
+
+
+
+
 
 	<center><BR>© Andy 2018<BR><BR></center>
 
