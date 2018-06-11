@@ -127,10 +127,6 @@ a:after {
      padding: 0px 0px;
 }
 
-#aboutUs {
-  font-size: 18px;
-}
-
 #imgmain{width:100%;height:auto;}
 
 #telmenu {
@@ -169,6 +165,7 @@ border: 1px solid #bbb;
 #aboutUs {
     float: left;
     padding: 25px 0;
+      font-size: 18px;
 }
 #imggal {
     width: 50%;
